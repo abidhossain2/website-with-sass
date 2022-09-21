@@ -1,0 +1,16 @@
+@mixin headerBg($bgImage) {
+    background: url($bgImage);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin linkStyle {
+    text-decoration: none;
+}

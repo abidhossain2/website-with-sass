@@ -1,0 +1,32 @@
+.header{
+    height: 75vh;
+    width: 100%;
+    @include headerBg('../../images/bg1.jpg');
+    background-color: rgba(37, 36, 36, 0.6);
+}
+
+.header_content{
+    @include displayFlex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+
+    &_h1{
+        font-size: 35px;
+        color: $white;
+    }
+}
+
+.header_links{
+    &_link{
+        @include linkStyle;
+        color: $white;
+        margin: 0 20px;
+    };
+}
+
+@media (max-width:1200px) {
+    .header{
+        width: 100%;
+    }
+}
