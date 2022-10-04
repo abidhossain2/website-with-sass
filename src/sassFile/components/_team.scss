@@ -1,0 +1,210 @@
+.team_member_container {
+    @include displayFlex;
+    width: 100%;
+    margin-top: -30px;
+
+    &_1 {
+        background-color: $light_gray;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        // z-index: 2;
+        @include displayFlex;
+
+        &_txt {
+            width: 380px;
+            height: 250px;
+        }
+
+        &_txt p:nth-child(1) {
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+
+        &_txt p:nth-child(2) {
+            font-size: 58px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+    }
+
+    &_2 {
+        background-color: $dark_white;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        ;
+    }
+}
+
+.member_slide_item {
+    position: absolute;
+    right: 516px;
+    width: 941px;
+    left: -235px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: flex-end;
+}
+
+.member_img_box {
+    width: 200px;
+    height: 240px;
+}
+
+.member_img {
+    width: 100%;
+    height: 180px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.member_info {
+    text-align: center;
+    margin-top: 9px;
+
+    p:nth-child(1) {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    p:nth-child(2) {
+        font-size: 15px;
+        color: $gray;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:1200px) {
+    .team_member_container {
+        width: 100%;
+    }
+
+    .member_slide_item {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width:992px) {
+    .team_member_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member_slide_item {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .team_member_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &_1 {
+            height: 300px;
+            text-align: center;
+            @include displayFlex;
+
+            &_txt {
+                width: 380px;
+                height: 150px;
+            }
+
+            &_txt p:nth-child(1) {
+                font-size: 20px;
+                letter-spacing: 10px;
+            }
+
+            &_txt p:nth-child(2) {
+                font-size: 40px;
+                font-weight: bold;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .member_slide_item {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:576px) {
+    .team_member_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &_1 {
+            height: 300px;
+            text-align: center;
+            @include displayFlex;
+
+            &_txt {
+                width: 380px;
+                height: 150px;
+            }
+
+            &_txt p:nth-child(1) {
+                font-size: 20px;
+                letter-spacing: 10px;
+            }
+
+            &_txt p:nth-child(2) {
+                font-size: 40px;
+                font-weight: bold;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .member_slide_item {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .member_img_box {
+        width: 76px;
+        height: 245px;
+    }
+    .member_img {
+        width: 100%;
+        height: 106px;
+    }
+    .team_member_container_2 {
+        background-color: #dbd7d7;
+        width: 100%;
+        position: relative;
+    }
+}

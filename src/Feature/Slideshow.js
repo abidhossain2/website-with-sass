@@ -70,13 +70,6 @@ const Slideshow = () => {
                     ))
                 }
             </div>
-            <div className="slideshowDots">
-                {
-                    colors.map((_, idx) => (
-                        <div className={`slideshowDot${index === idx ? " active" : ""}`} key={idx}></div>
-                    ))
-                }
-            </div>
         </div>
     );
 };

@@ -1,0 +1,504 @@
+.project_section {
+    @include displayFlex;
+    padding: 20px;
+    height: 400px;
+    background-color: $light-gray;
+
+    &_container {
+        @include displayBetween;
+
+        .project_txt {
+            width: 900px;
+
+            p {
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 55px;
+                font-weight: bold;
+
+                span:nth-child(1) {
+                    -webkit-text-stroke: 1px black;
+                    color: transparent;
+                    font-size: 55px;
+                }
+            }
+        }
+
+        .project_btn {
+            width: 200px;
+            position: relative;
+
+
+            p {
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+
+            }
+
+            ::before {
+                content: "";
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 201px;
+                height: 55px;
+                transition: all 0.8s ease-in-out;
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            button {
+                width: 201px;
+                border: none;
+                height: 55px;
+                background: black;
+                color: white;
+                letter-spacing: 4px;
+                transition: all 0.4s ease-in-out;
+
+                p {
+                    font-size: 11px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    position: relative;
+                    z-index: 2;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            button:hover:before {
+                content: "";
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 201px;
+                height: 55px;
+                opacity: 1;
+                color: white;
+                transform: scale(1);
+            }
+
+            button:hover p {
+                color: black;
+            }
+
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .project_section {
+        @include displayFlex;
+        padding: 20px;
+        height: 400px;
+        background-color: $light-gray;
+
+        &_container {
+            @include displayBetween;
+
+            .project_txt {
+                width: 100%;
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+                }
+
+                h1 {
+                    font-size: 55px;
+                    font-weight: bold;
+
+                    span:nth-child(1) {
+                        -webkit-text-stroke: 1px black;
+                        color: transparent;
+                        font-size: 55px;
+                    }
+                }
+            }
+
+            .project_btn {
+                width: 100%;
+                position: relative;
+
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+
+                }
+
+                ::before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    transition: all 0.8s ease-in-out;
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                button {
+                    width: 201px;
+                    border: none;
+                    height: 55px;
+                    background: black;
+                    color: white;
+                    letter-spacing: 4px;
+                    transition: all 0.7s ease-in-out;
+
+                    p {
+                        font-size: 11px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        position: relative;
+                        z-index: 2;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                button:hover:before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    opacity: 1;
+                    color: white;
+                    transform: scale(1);
+                }
+
+                button:hover p {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .project_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 400px;
+        background-color: $light-gray;
+
+        &_container {
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+            .project_txt {
+                width: 100%;
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    text-align: center;
+
+                    span:nth-child(1) {
+                        -webkit-text-stroke: 1px black;
+                        color: transparent;
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            .project_btn {
+                width: 100%;
+                position: relative;
+
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+
+                }
+
+                ::before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    transition: all 0.8s ease-in-out;
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                button {
+                    width: 201px;
+                    border: none;
+                    height: 55px;
+                    background: black;
+                    color: white;
+                    letter-spacing: 4px;
+                    transition: all 0.7s ease-in-out;
+                    display: block;
+                    margin:20px auto 0px;
+
+                    p {
+                        font-size: 11px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        position: relative;
+                        z-index: 2;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                button:hover:before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    opacity: 1;
+                    color: white;
+                    transform: scale(1);
+                }
+
+                button:hover p {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .project_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 400px;
+        background-color: $light-gray;
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .project_txt {
+                width: 100%;
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-align: center;
+
+                    span:nth-child(1) {
+                        -webkit-text-stroke: 1px black;
+                        color: transparent;
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .project_btn {
+                width: 100%;
+                position: relative;
+
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+
+                }
+
+                ::before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    transition: all 0.8s ease-in-out;
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                button {
+                    width: 201px;
+                    border: none;
+                    height: 55px;
+                    background: black;
+                    color: white;
+                    letter-spacing: 4px;
+                    transition: all 0.7s ease-in-out;
+                    display: block;
+                    margin:20px auto 0px;
+
+                    p {
+                        font-size: 11px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        position: relative;
+                        z-index: 2;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                button:hover:before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    opacity: 1;
+                    color: white;
+                    transform: scale(1);
+                }
+
+                button:hover p {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .project_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 400px;
+        background-color: $light-gray;
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .project_txt {
+                width: 100%;
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-align: center;
+
+                    span:nth-child(1) {
+                        -webkit-text-stroke: 1px black;
+                        color: transparent;
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .project_btn {
+                width: 100%;
+                position: relative;
+
+
+                p {
+                    letter-spacing: 8px;
+                    margin-bottom: 20px;
+
+                }
+
+                ::before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    transition: all 0.8s ease-in-out;
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                button {
+                    width: 201px;
+                    border: none;
+                    height: 55px;
+                    background: black;
+                    color: white;
+                    letter-spacing: 4px;
+                    transition: all 0.7s ease-in-out;
+                    display: block;
+                    margin:20px auto 0px;
+
+                    p {
+                        font-size: 11px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        position: relative;
+                        z-index: 2;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                button:hover:before {
+                    content: "";
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 201px;
+                    height: 55px;
+                    opacity: 1;
+                    color: white;
+                    transform: scale(1);
+                }
+
+                button:hover p {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}

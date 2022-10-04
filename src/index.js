@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Cursor from './Feature/Cursor';
 import reportWebVitals from './reportWebVitals';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Cursor/>
-    <App />
+    <ParallaxProvider scrollAxis="vertical">
+      <Cursor />
+      <App />
+    </ParallaxProvider>
   </React.StrictMode>
 );
 

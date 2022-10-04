@@ -1,0 +1,284 @@
+.clients_section_container {
+    @include displayFlex;
+    padding: 25px;
+    height: 700px;
+
+    .clients_txt {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            letter-spacing: 10px;
+            color: $gray;
+        }
+
+        h1 {
+            font-size: 60px;
+            letter-spacing: 7px;
+        }
+    }
+
+    .clients_logo {
+        width: 915px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        &_box {
+            width: 150px;
+            height: 150px;
+            border-radius: 9px;
+            border: 1px solid $light-gray;
+            position: relative;
+
+            img {
+                width: 60%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+                transition: all 0.7s ease-out;
+            }
+
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                text-decoration: none;
+                font-size: 13px;
+                text-align: center;
+                transition: all 0.7s ease-in-out;
+                color: black;
+            }
+
+        }
+    }
+}
+
+.clients_logo_box:hover img {
+    transform: scale(0);
+}
+
+.clients_logo_box:hover a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    .clients_section_container {
+        width: 100%;
+        @include displayFlex;
+        padding: 25px;
+        height: 700px;
+
+        .clients_txt {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                letter-spacing: 10px;
+                color: $gray;
+            }
+
+            h1 {
+                font-size: 60px;
+                letter-spacing: 7px;
+            }
+        }
+
+        .clients_logo {
+            width: 915px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+            &_box {
+                width: 150px;
+                height: 150px;
+                border-radius: 9px;
+                border: 1px solid $light-gray;
+
+                img {
+                    width: 60%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .clients_section_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px;
+
+        .clients_txt {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+
+            p {
+                letter-spacing: 10px;
+                color: $gray;
+            }
+
+            h1 {
+                font-size: 60px;
+                letter-spacing: 7px;
+            }
+        }
+
+        .clients_logo {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+
+            &_box {
+                width: 150px;
+                height: 150px;
+                border-radius: 9px;
+                border: 1px solid $light-gray;
+
+                img {
+                    width: 60%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .clients_section_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px;
+        height: auto;
+
+        .clients_txt {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+
+            p {
+                letter-spacing: 10px;
+                color: $gray;
+            }
+
+            h1 {
+                font-size: 60px;
+                letter-spacing: 7px;
+            }
+        }
+
+        .clients_logo {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+
+            &_box {
+                width: 150px;
+                height: 150px;
+                border-radius: 9px;
+                border: 1px solid $light-gray;
+
+                img {
+                    width: 60%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .clients_section_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px;
+
+        .clients_txt {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+
+            p {
+                letter-spacing: 10px;
+                color: $gray;
+            }
+
+            h1 {
+                font-size: 60px;
+                letter-spacing: 7px;
+            }
+        }
+
+        .clients_logo {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+
+            &_box {
+                width: 100px;
+                height: 100px;
+                border-radius: 9px;
+                border: 1px solid $light-gray;
+
+                img {
+                    width: 60%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

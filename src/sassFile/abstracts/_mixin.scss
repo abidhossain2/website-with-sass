@@ -10,7 +10,22 @@
     justify-content: center;
     align-items: center;
 }
+@mixin displayClmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin displayBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @mixin linkStyle {
     text-decoration: none;
+}
+
+@mixin fw_bold {
+    font-weight: bold;
 }

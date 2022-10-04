@@ -1,0 +1,225 @@
+.about_us_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+
+    &_img {
+        width: 500px;
+        padding: 20px;
+
+        &_img1 {
+            width: 450px;
+            height: 600px;
+            object-fit: contain;
+        }
+    }
+
+    &_txt {
+        width: 500px;
+
+        .txt1 {
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .txt2 {
+            color: $gray;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about {
+        display: flex;
+        margin-bottom: 60px;
+
+        .count {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid $gray;
+            text-align: center;
+            color: $gray;
+            @include displayFlex;
+
+            &_txt {
+                margin-left: 20px;
+
+                .goal {
+                    font-size: 24px;
+                    font-weight: bold;
+
+                }
+
+                .goal_txt {
+                    color: $gray;
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+}
+@media (max-width:1200px) {
+    .about_us_section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    
+        &_img {
+            width: 100%;
+            padding: 20px;
+    
+            &_img1 {
+                width: 450px;
+                height: 600px;
+                object-fit: contain;
+            }
+        }
+    
+        &_txt {
+            width: 100%;
+    
+            .txt1 {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+    
+            .txt2 {
+                color: $gray;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .about_us_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    
+        &_img {
+            width: 100%;
+            padding: 20px;
+    
+            &_img1 {
+                width: 450px;
+                height: 600px;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+            }
+        }
+    
+        &_txt {
+            width: 450px;
+            margin: 31px auto;
+    
+            .txt1 {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+    
+            .txt2 {
+                color: $gray;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .about_us_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    
+        &_img {
+            width: 100%;
+            padding: 20px;
+    
+            &_img1 {
+                width: 450px;
+                height: 600px;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+            }
+        }
+    
+        &_txt {
+            width: 350px;
+            margin: 31px auto;
+    
+            .txt1 {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+    
+            .txt2 {
+                color: $gray;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .about_us_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    
+        &_img {
+            width: 100%;
+            padding: 20px;
+    
+            &_img1 {
+                width: 100%;
+                height: 600px;
+                object-fit: contain;
+                display: block;
+                margin: auto;
+            }
+        }
+    
+        &_txt {
+            width: 100%;
+            margin: 31px auto;
+    
+            .txt1 {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+    
+            .txt2 {
+                color: $gray;
+                line-height: 26px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .about{
+        width: 100%;
+       
+    }
+}

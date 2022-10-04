@@ -50,6 +50,7 @@
             width: 25px;
             height: 2px;
             background-color: $white;
+           
         }
 
         &_line:nth-child(2) {
@@ -57,6 +58,7 @@
             width: 18px;
             height: 2px;
             background-color: $white;
+            
         }
 
         &_line:nth-child(3) {
@@ -64,6 +66,7 @@
             width: 25px;
             height: 2px;
             background-color: $white;
+            
         }
     }
 }
@@ -85,7 +88,7 @@
 
 .active {
     background: $dark_white;
-    z-index: 999;
+    z-index: 1;
 }
 
 .cross-line {
@@ -99,10 +102,12 @@
 .cross-line:nth-child(1) {
     transform: rotate(45deg);
     position: absolute;
+    transition: all 0.6s;
 }
 
 .cross-line:nth-child(2) {
     transform: rotate(-45deg);
+    transition: all 0.6s;
 }
 
 @media (max-width:1200px) {
