@@ -29,26 +29,10 @@
 
         .project_btn {
             width: 200px;
-            position: relative;
-
-
             p {
                 letter-spacing: 8px;
                 margin-bottom: 20px;
 
-            }
-
-            ::before {
-                content: "";
-                background-color: white;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 201px;
-                height: 55px;
-                transition: all 0.8s ease-in-out;
-                opacity: 0;
-                transform: scale(0);
             }
 
             button {
@@ -65,26 +49,18 @@
                     font-weight: bold;
                     margin-top: 20px;
                     position: relative;
-                    z-index: 2;
+                    // z-index: 2;
                     color: white;
                     font-weight: bold;
                 }
             }
 
-            button:hover:before {
-                content: "";
+            button:hover{
                 background-color: white;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 201px;
-                height: 55px;
-                opacity: 1;
-                color: white;
-                transform: scale(1);
+            
             }
-
-            button:hover p {
+            button:hover p{
+               
                 color: black;
             }
 
@@ -123,29 +99,13 @@
             }
 
             .project_btn {
-                width: 100%;
-                position: relative;
-
-
+                width: 200px;
                 p {
                     letter-spacing: 8px;
                     margin-bottom: 20px;
-
+    
                 }
-
-                ::before {
-                    content: "";
-                    background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    transition: all 0.8s ease-in-out;
-                    opacity: 0;
-                    transform: scale(0);
-                }
-
+    
                 button {
                     width: 201px;
                     border: none;
@@ -153,36 +113,27 @@
                     background: black;
                     color: white;
                     letter-spacing: 4px;
-                    transition: all 0.7s ease-in-out;
-
+                    transition: all 0.4s ease-in-out;
+    
                     p {
                         font-size: 11px;
                         font-weight: bold;
                         margin-top: 20px;
                         position: relative;
-                        z-index: 2;
+                        // z-index: 2;
                         color: white;
                         font-weight: bold;
                     }
                 }
-
-                button:hover:before {
-                    content: "";
+    
+                button:hover{
                     background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    opacity: 1;
-                    color: white;
-                    transform: scale(1);
                 }
-
-                button:hover p {
+                button:hover p{
+                    
                     color: black;
                 }
-
+    
             }
         }
     }
@@ -226,29 +177,13 @@
             }
 
             .project_btn {
-                width: 100%;
-                position: relative;
-
-
+                width: 200px;
                 p {
                     letter-spacing: 8px;
                     margin-bottom: 20px;
-
+    
                 }
-
-                ::before {
-                    content: "";
-                    background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    transition: all 0.8s ease-in-out;
-                    opacity: 0;
-                    transform: scale(0);
-                }
-
+    
                 button {
                     width: 201px;
                     border: none;
@@ -256,38 +191,28 @@
                     background: black;
                     color: white;
                     letter-spacing: 4px;
-                    transition: all 0.7s ease-in-out;
-                    display: block;
-                    margin:20px auto 0px;
-
+                    transition: all 0.4s ease-in-out;
+    
                     p {
                         font-size: 11px;
                         font-weight: bold;
                         margin-top: 20px;
                         position: relative;
-                        z-index: 2;
+                        // z-index: 2;
                         color: white;
                         font-weight: bold;
                     }
                 }
-
-                button:hover:before {
-                    content: "";
+    
+                button:hover{
                     background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    opacity: 1;
-                    color: white;
-                    transform: scale(1);
+                
                 }
-
-                button:hover p {
+                button:hover p{
+                   
                     color: black;
                 }
-
+    
             }
         }
     }
@@ -331,29 +256,13 @@
             }
 
             .project_btn {
-                width: 100%;
-                position: relative;
-
-
+                width: 200px;
                 p {
                     letter-spacing: 8px;
                     margin-bottom: 20px;
-
+    
                 }
-
-                ::before {
-                    content: "";
-                    background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    transition: all 0.8s ease-in-out;
-                    opacity: 0;
-                    transform: scale(0);
-                }
-
+    
                 button {
                     width: 201px;
                     border: none;
@@ -361,38 +270,28 @@
                     background: black;
                     color: white;
                     letter-spacing: 4px;
-                    transition: all 0.7s ease-in-out;
-                    display: block;
-                    margin:20px auto 0px;
-
+                    transition: all 0.4s ease-in-out;
+    
                     p {
                         font-size: 11px;
                         font-weight: bold;
                         margin-top: 20px;
                         position: relative;
-                        z-index: 2;
+                        // z-index: 2;
                         color: white;
                         font-weight: bold;
                     }
                 }
-
-                button:hover:before {
-                    content: "";
+    
+                button:hover{
                     background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    opacity: 1;
-                    color: white;
-                    transform: scale(1);
+                
                 }
-
-                button:hover p {
+                button:hover p{
+                   
                     color: black;
                 }
-
+    
             }
         }
     }
@@ -436,29 +335,13 @@
             }
 
             .project_btn {
-                width: 100%;
-                position: relative;
-
-
+                width: 200px;
                 p {
                     letter-spacing: 8px;
                     margin-bottom: 20px;
-
+    
                 }
-
-                ::before {
-                    content: "";
-                    background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    transition: all 0.8s ease-in-out;
-                    opacity: 0;
-                    transform: scale(0);
-                }
-
+    
                 button {
                     width: 201px;
                     border: none;
@@ -466,38 +349,28 @@
                     background: black;
                     color: white;
                     letter-spacing: 4px;
-                    transition: all 0.7s ease-in-out;
-                    display: block;
-                    margin:20px auto 0px;
-
+                    transition: all 0.4s ease-in-out;
+    
                     p {
                         font-size: 11px;
                         font-weight: bold;
                         margin-top: 20px;
                         position: relative;
-                        z-index: 2;
+                        // z-index: 2;
                         color: white;
                         font-weight: bold;
                     }
                 }
-
-                button:hover:before {
-                    content: "";
+    
+                button:hover{
                     background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 201px;
-                    height: 55px;
-                    opacity: 1;
-                    color: white;
-                    transform: scale(1);
+                
                 }
-
-                button:hover p {
+                button:hover p{
+                   
                     color: black;
                 }
-
+    
             }
         }
     }
